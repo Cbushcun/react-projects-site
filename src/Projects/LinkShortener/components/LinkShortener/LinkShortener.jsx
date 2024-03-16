@@ -4,8 +4,6 @@ import axios from "axios";
 
 // page-specific styling import
 import "./LinkShortener.scss";
-import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
-import Navbar from "../Navbar/Navbar";
 
 const apiKey = import.meta.env.VITE_TINY_URL_API_KEY; // Replace with "YOUR_TINY_URL_API_KEY"
 
@@ -115,7 +113,9 @@ export default function LinkShortener() {
       {/* Container for title text, entry element, and 'Shorten' button*/}
       <div className="position-absolute top-50 start-50 translate-middle col-xxl-6 col-xl-6 col-lg-6 col-md-7 col-sm-10 col-10">
         {/* Title Text */}
-        <h1 className="tracking-in-expand text-center">Link Shortener</h1>
+        <h1 className="tracking-in-expand text-center text-5xl">
+          Link Shortener
+        </h1>
         {/* Container for input field and 'Shorten' button */}
         <div className="input-group shadow slide-in-bottom">
           {/* Input field */}
