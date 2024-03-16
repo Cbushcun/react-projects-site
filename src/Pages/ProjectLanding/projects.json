@@ -8,51 +8,6 @@
       "imgLink": "https://i.imgur.com/j1MXpD2.png",
       "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
       "hrefLink": "/link-shortener"
-    },
-    {
-      "name": "Link Shortener",
-      "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
-      "technologies": "React, Boostsrap, Axios, TinyURL API",
-      "designer": "Myself",
-      "imgLink": "https://i.imgur.com/j1MXpD2.png",
-      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
-      "hrefLink": "/link-shortener"
-    },
-    {
-      "name": "Link Shortener",
-      "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
-      "technologies": "React, Boostsrap, Axios, TinyURL API",
-      "designer": "Myself",
-      "imgLink": "https://i.imgur.com/j1MXpD2.png",
-      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
-      "hrefLink": "/link-shortener"
-    },
-    {
-      "name": "Link Shortener",
-      "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
-      "technologies": "React, Boostsrap, Axios, TinyURL API",
-      "designer": "Myself",
-      "imgLink": "https://i.imgur.com/j1MXpD2.png",
-      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
-      "hrefLink": "/link-shortener"
-    },
-    {
-      "name": "Link Shortener",
-      "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
-      "technologies": "React, Boostsrap, Axios, TinyURL API",
-      "designer": "Myself",
-      "imgLink": "https://i.imgur.com/j1MXpD2.png",
-      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
-      "hrefLink": "/link-shortener"
-    },
-    {
-      "name": "Link Shortener",
-      "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
-      "technologies": "React, Boostsrap, Axios, TinyURL API",
-      "designer": "Myself",
-      "imgLink": "https://i.imgur.com/j1MXpD2.png",
-      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
-      "hrefLink": "/link-shortener"
     }
   ]
 }

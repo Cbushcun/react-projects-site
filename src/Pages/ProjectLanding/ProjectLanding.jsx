@@ -4,8 +4,8 @@ import projectsData from "./projects.json";
 
 export default function ProjectLanding() {
   return (
-    <section className="text-stone-200 bg-stone-800">
-      <div className=" flex flex-col mx-auto max-w-96 items-center gap-5 mt-10">
+    <section className="text-stone-200 bg-stone-800 flex flex-col min-h-screen">
+      <div className=" flex flex-col mx-auto max-w-96 items-center gap-4 mt-10">
         <h1 className="text-5xl">Projects</h1>
         <div className="w-full h-1 bg-green-400"></div>
       </div>
