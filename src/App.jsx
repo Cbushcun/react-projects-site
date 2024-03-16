@@ -9,12 +9,11 @@ import NotFound from "./Pages/NotFound";
 function App() {
   return (
     <>
-      <NavBar />
       <Router>
         <Routes>
           <Route path="/" element={<ProjectLanding />} />
           <Route path="/link-shortener" element={<LinkShortenerApp />} />
-          <Route element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
     </>
