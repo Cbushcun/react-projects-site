@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer";
 import ProjectThumbnail from "./components/ProjectThumbnail";
 import projectsData from "./projects.json";
+import NavBar from "../../components/NavBar";
 
 export default function ProjectLanding() {
   return (
