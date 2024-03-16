@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProjectLanding />} />
           <Route path="/link-shortener" element={<LinkShortenerApp />} />
+          <Route element={<NotFound />} />
         </Routes>
       </Router>
     </>
