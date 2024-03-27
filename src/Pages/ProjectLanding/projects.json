@@ -1,13 +1,26 @@
 {
   "projects": [
     {
-      "name": "Link Shortener",
+      "name": "URL Shortener",
+      "year": "2023",
       "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
-      "technologies": "React, Boostsrap, Axios, TinyURL API",
+      "technologies": "React,Boostsrap,Axios,TinyURL API",
       "designer": "Myself",
       "imgLink": "https://i.imgur.com/j1MXpD2.png",
       "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
-      "hrefLink": "/link-shortener"
+      "hrefLink": "/link-shortener",
+      "liveLink": "https://www.projects.businessbybush.com/link-shortener"
+    },
+    {
+      "name": "IT Capstone Project",
+      "year": "2023",
+      "desc": "A project done over the course of one semester for IT Capstone in attendance at Kennesaw State University",
+      "technologies": "Flask, Stripe",
+      "designer": "Myself",
+      "imgLink": "",
+      "repoLink": "",
+      "hrefLink": "https://team3ailimits.azurewebsites.net/",
+      "liveLink": "https://team3ailimits.azurewebsites.net/"
     }
   ]
 }

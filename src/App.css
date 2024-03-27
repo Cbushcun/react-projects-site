@@ -3,7 +3,7 @@
 @import "../node_modules/tailwindcss/utilities.css";
 
 html {
-  font-family: "Lucida Console", "Arial", monospace; /* Primary font: Inconsolata*/
+  font-family: "Lucida Console", "Arial", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
