@@ -21,6 +21,28 @@
       "repoLink": "https://github.com/Cbushcun/IT-Capstone-Project",
       "hrefLink": "https://team3ailimits.azurewebsites.net/",
       "liveLink": "https://team3ailimits.azurewebsites.net/"
+    },
+    {
+      "name": "Pokedex",
+      "year": "2023",
+      "desc": "A Pokedex project that I was working on to utilize PokeAPI in order to develop a pokedex-style webapp. Discarded until further notice",
+      "technologies": "React, Typescript, PokeAPI",
+      "designer": "Myself",
+      "imgLink": "",
+      "repoLink": "https://github.com/Cbushcun/react-pokedex",
+      "hrefLink": "",
+      "liveLink": ""
+    },
+    {
+      "name": "React Portfolio v1",
+      "year": "2024",
+      "desc": "React portfolio developed and designed by myself",
+      "technologies": "ReactJS, PokeAPI",
+      "designer": "Myself",
+      "imgLink": "",
+      "repoLink": "https://github.com/Cbushcun/react-portfolio",
+      "hrefLink": "https://www.businessbybush.com/",
+      "liveLink": "https://www.businessbybush.com/"
     }
   ]
 }
