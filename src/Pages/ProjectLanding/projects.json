@@ -1,15 +1,26 @@
 {
   "projects": [
     {
-      "name": "URL Shortener",
-      "year": "2023",
-      "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
-      "technologies": "React,Boostsrap,Axios,TinyURL API",
+      "name": "React Portfolio v1",
+      "year": "2024",
+      "desc": "React portfolio developed and designed by myself",
+      "technologies": "ReactJS, PokeAPI",
       "designer": "Myself",
-      "imgLink": "https://i.imgur.com/j1MXpD2.png",
-      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
-      "hrefLink": "/link-shortener",
-      "liveLink": "https://www.projects.businessbybush.com/link-shortener"
+      "imgLink": "",
+      "repoLink": "https://github.com/Cbushcun/react-portfolio",
+      "hrefLink": "https://www.businessbybush.com/",
+      "liveLink": "https://www.businessbybush.com/"
+    },
+    {
+      "name": "Pokedex (experimental)",
+      "year": "2023",
+      "desc": "A Pokedex project that I was working on to utilize PokeAPI in order to develop a pokedex-style webapp. Discarded until further notice",
+      "technologies": "React, Typescript, PokeAPI",
+      "designer": "Myself",
+      "imgLink": "",
+      "repoLink": "https://github.com/Cbushcun/react-pokedex",
+      "hrefLink": "",
+      "liveLink": ""
     },
     {
       "name": "IT Capstone Project",
@@ -23,26 +34,15 @@
       "liveLink": "https://team3ailimits.azurewebsites.net/"
     },
     {
-      "name": "Pokedex",
+      "name": "URL Shortener",
       "year": "2023",
-      "desc": "A Pokedex project that I was working on to utilize PokeAPI in order to develop a pokedex-style webapp. Discarded until further notice",
-      "technologies": "React, Typescript, PokeAPI",
+      "desc": "A simple URL shortening app created using React to familiarize myself with GET and POST requests and what to expect of them. (Original project in TSX as shown in repo, Live demo is JSX)",
+      "technologies": "React,Boostsrap,Axios,TinyURL API",
       "designer": "Myself",
-      "imgLink": "",
-      "repoLink": "https://github.com/Cbushcun/react-pokedex",
-      "hrefLink": "",
-      "liveLink": ""
-    },
-    {
-      "name": "React Portfolio v1",
-      "year": "2024",
-      "desc": "React portfolio developed and designed by myself",
-      "technologies": "ReactJS, PokeAPI",
-      "designer": "Myself",
-      "imgLink": "",
-      "repoLink": "https://github.com/Cbushcun/react-portfolio",
-      "hrefLink": "https://www.businessbybush.com/",
-      "liveLink": "https://www.businessbybush.com/"
+      "imgLink": "https://i.imgur.com/j1MXpD2.png",
+      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
+      "hrefLink": "/link-shortener",
+      "liveLink": "https://www.projects.businessbybush.com/link-shortener"
     }
   ]
 }
