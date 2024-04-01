@@ -13,7 +13,10 @@ export default function WebDevIndex({ showNavProp, onNavClickProp }) {
         <div className="backdrop-blur"></div>
         <header>
           Old static site project from school, updated and moved into React.
-          Created in 2022, updated in 2024
+          Created in 2022, updated in 2024.{" "}
+          <a href="https://www.projects.businessbybush.com">
+            Return to prject site here
+          </a>
         </header>
         <WebDevNavbar
           showNavProp={showNavProp}
