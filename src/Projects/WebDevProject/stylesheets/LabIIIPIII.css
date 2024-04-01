@@ -1,0 +1,38 @@
+main {
+  width: 60%;
+}
+.content {
+  margin: auto;
+  width: 35rem;
+  padding: 0;
+}
+table {
+  width: 100%;
+  background-color: #4ac0c2;
+  border-collapse: collapse;
+  backdrop-filter: blur(50px);
+}
+table tr:nth-child(even) {
+  background: #4dab44;
+}
+tr,
+th,
+td {
+  border: 3px solid #424242;
+}
+td {
+  color: black;
+  padding: 0 1rem;
+}
+th {
+  background-color: #316b2c;
+  padding: 0.5rem 1rem;
+}
+@media (max-width: 1008px) {
+  main {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+}

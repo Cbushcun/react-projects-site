@@ -1,0 +1,31 @@
+main {
+  width: 60%;
+}
+.content {
+  margin: auto;
+  width: 35rem;
+  padding: 0;
+}
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table {
+  backdrop-filter: blur(50px);
+}
+table th {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+}
+table td {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 1rem;
+}
+@media (max-width: 1008px) {
+  main {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+}

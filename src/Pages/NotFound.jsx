@@ -22,7 +22,7 @@ function NotFound() {
   };
 
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center  text-3xl text-stone-200 bg-stone-800">
+    <div className="flex h-screen w-screen flex-col items-center justify-center  bg-stone-800 text-3xl text-stone-200">
       <h1>Error: 404</h1>
       <h1 className="mb-5 border-b-2 border-green-400 pb-5">
         That page does not exist

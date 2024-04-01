@@ -1,0 +1,254 @@
+/*
+*************************************************************
+CSS Rules in order from outermost element to innermost from
+top to bottom in index.html. General rules at the bottom
+along with media queries
+*************************************************************
+*/
+* {
+  z-index: 10;
+}
+.web-dev-body {
+  overflow-x: hidden;
+  background-color: #1b1b1b;
+  font-family: sans-serif, monospace;
+  color: #dedcdc;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.ball-one {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50rem;
+  height: 50rem;
+  background-color: #d8e87d;
+  border-radius: 50%;
+  transform: translate(-25rem, -25rem);
+  z-index: 0;
+}
+.ball-two {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50rem;
+  height: 50rem;
+  background-color: #f2674b;
+  border-radius: 50%;
+  transform: translate(15rem, 15rem);
+  z-index: 0;
+}
+.backdrop-blur {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
+}
+header {
+  text-align: center;
+  background-color: #5458b8;
+  padding: 0.1rem 0;
+  z-index: 50;
+}
+header a {
+  color: #d8e87d;
+}
+header a:visited {
+  color: #d13b9c;
+}
+header a:hover {
+  color: #f2674b;
+}
+.nav {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  padding: 0 0 0 2rem;
+  z-index: 100;
+}
+.nav p {
+  font-size: 2rem;
+  text-align: center;
+}
+.nav p:first-of-type {
+  justify-self: left;
+}
+.nav p:nth-of-type(2) {
+  font-weight: 800;
+}
+.nav .gradient {
+  background: linear-gradient(to bottom, #d8e87d 15%, #f2674b 50%, #d13b9c 75%);
+  justify-self: right;
+  list-style-type: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  border: none;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+}
+.nav .gradient:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.nav button:hover {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+main {
+  max-width: 75rem;
+  display: flex;
+  margin: auto;
+  height: 100%;
+}
+.selfie-container {
+  display: flex;
+  padding: 0 2rem;
+}
+.selfie {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 100%px;
+  box-shadow:
+    0 0 3px 3px #d8e87d,
+    0 0 6px 6px #f2674b,
+    0 0 9px 9px #d13b9c;
+}
+.content {
+  text-align: left;
+  max-width: 50rem;
+  font-size: 1.3rem;
+  text-indent: 2rem;
+  line-height: 2rem;
+  margin: auto 0;
+}
+.content h2 {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.51rem;
+  margin-bottom: 1rem;
+  line-height: 3.5rem;
+}
+aside {
+  position: fixed;
+  right: 0;
+  top: 2rem;
+  height: 100vh;
+  backdrop-filter: blur(50px);
+  text-indent: 10px;
+  padding-top: 2.5rem;
+  transition: transform 0.25s ease-out;
+}
+ul .list-header.list-item {
+  padding-bottom: 0;
+}
+.nav-list,
+.list-item {
+  list-style-type: none;
+  width: 15rem;
+}
+.list-header .list-item {
+  text-indent: 20px;
+}
+.list-header .list-item:first-child {
+  margin-top: 5px;
+}
+.list-item a:hover {
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.list-item {
+  font-size: 1.2rem;
+}
+.list-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  padding: 5px 0;
+}
+i {
+  color: transparent;
+  font-size: 2.5rem;
+  transform: rotate(90deg);
+  transition: all 0.2s ease-out;
+  padding-top: 8px;
+}
+
+/*
+***************************************************************
+General CSS rules applicable to anything using this stylesheet
+***************************************************************
+*/
+
+.funky-text {
+  /* Stylized text with gradient background for webpage theme */
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0,
+    "SHLN" 42.7;
+  font-size: 1.5rem;
+}
+
+.inconsolata {
+  /* Font I have personal interest to but have yet to decide if theres a place for it here */
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.rotate-icon {
+  transform: rotate(270deg);
+}
+
+.translate-full {
+  transform: translate(100%);
+}
+/*
+**************
+Media Queries
+**************
+*/
+@media (max-width: 1008px) {
+  .nav p:first-of-type {
+    visibility: hidden;
+    text-wrap: nowrap;
+    width: 0;
+  }
+  main {
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+  }
+  .content {
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0 2rem;
+  }
+  .content h2 {
+    font-size: 3rem;
+  }
+  .selfie {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+}

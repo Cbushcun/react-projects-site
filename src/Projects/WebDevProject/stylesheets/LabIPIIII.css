@@ -1,0 +1,32 @@
+.content {
+  padding: 0 2rem;
+}
+.content h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.content h2 {
+  margin: 3rem 0 1.5rem;
+  font-size: 3rem;
+}
+h2 a {
+  color: #f2674b;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+h2 a:hover {
+  color: #d8e87d;
+}
+
+/*
+********************
+General use stylings
+********************
+*/
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+}

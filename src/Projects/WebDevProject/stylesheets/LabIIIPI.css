@@ -1,0 +1,28 @@
+.pnk {
+  background-color: #c94d9e;
+}
+.blu {
+  background-color: #4d51c9;
+}
+.grn {
+  background-color: #3a9c45;
+}
+.red {
+  background-color: #9c423a;
+}
+.content {
+  width: 100%;
+  padding: 0;
+}
+main {
+  width: 30%;
+}
+@media (max-width: 1008px) {
+  main {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .content {
+    margin: auto;
+  }
+}
