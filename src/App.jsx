@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import WebDevIndex from "./Projects/WebDevProject/pages/WebDevIndex";
 import LabIPIIII from "./Projects/WebDevProject/pages/LabIPIIII";
+import LabIIPII from "./Projects/WebDevProject/pages/LabIIPII";
 
 // Multi-route pages are not included in this App.jsx and are instead located within their respective ProjectNameApp.jsx files due to maintaing proper scope. Undisplayed endpoints and their state, functions, and locations are as follows:
 
@@ -40,6 +41,12 @@ function App() {
             path="/introtowebdev/lab1p4"
             element={
               <LabIPIIII showNavProp={showNav} onNavClickProp={onNavClick} />
+            }
+          />
+          <Route
+            path="/introtowebdev/lab2p2"
+            element={
+              <LabIIPII showNavProp={showNav} onNavClickProp={onNavClick} />
             }
           />
           {/* Link Shortener */}

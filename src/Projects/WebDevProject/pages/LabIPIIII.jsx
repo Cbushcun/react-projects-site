@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import "../stylesheets/WebDevIndex.css";
 import WebDevNavlist from "../components/WebDevNavlist";
 import WebDevNavbar from "../components/WebDevNavbar";

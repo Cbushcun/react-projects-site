@@ -1,7 +1,4 @@
-main {
-  width: 60%;
-}
-.content {
+.content:has(table) {
   margin: auto;
   width: 35rem;
   padding: 0;
