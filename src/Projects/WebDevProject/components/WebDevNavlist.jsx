@@ -40,9 +40,6 @@ export default function WebDevNavlist({ showNavProp }) {
               <li className="list-item">
                 <Link to="/introtowebdev/lab3p3">Part 3</Link>
               </li>
-              <li className="list-item">
-                <Link to="/introtowebdev/lab3p4">Part 4</Link>
-              </li>
             </ul>
           </li>
         </ul>

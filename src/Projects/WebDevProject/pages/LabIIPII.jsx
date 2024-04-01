@@ -13,7 +13,7 @@ export default function LabIIPII({ showNavProp, onNavClickProp }) {
       <WebDevNavbar
         showNavProp={showNavProp}
         onNavClickProp={onNavClickProp}
-        tabTitleText="Lab 2 Pt 2 IT 3203"
+        tabTitleText="Lab 2 Pt 2 IT3203"
       />
       <div className="container">
         <main>

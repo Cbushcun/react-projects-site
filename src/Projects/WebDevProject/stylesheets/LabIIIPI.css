@@ -14,7 +14,7 @@
   width: 100%;
   padding: 0;
 }
-main {
+main:has(ol) {
   width: 30%;
 }
 @media (max-width: 1008px) {

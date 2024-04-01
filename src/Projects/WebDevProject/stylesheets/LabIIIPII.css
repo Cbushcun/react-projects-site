@@ -1,19 +1,18 @@
 .topics {
+  margin-top: 3rem;
   position: absolute;
   width: 15%;
   float: right;
   color: #232323;
   padding: 2rem;
   font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3rem;
 }
 .topics ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-main {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
 }
 .content {
   display: flex;
