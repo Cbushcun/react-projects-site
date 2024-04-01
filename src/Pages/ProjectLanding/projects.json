@@ -43,6 +43,17 @@
       "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
       "hrefLink": "/link-shortener",
       "liveLink": "https://www.projects.businessbybush.com/link-shortener"
+    },
+    {
+      "name": "Web Dev Intro Project",
+      "year": "2022",
+      "desc": "A static site developed for my Intro to Web Development class. Original code hosted on repository. Code updated and developed for integration within react",
+      "technologies": "HTML,CSS,React",
+      "designer": "Myself",
+      "imgLink": "",
+      "repoLink": "https://github.com/Cbushcun/react-link-shortener-site",
+      "hrefLink": "/introtowebdev",
+      "liveLink": "https://www.projects.businessbybush.com/introtowebdev"
     }
   ]
 }
