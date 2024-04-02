@@ -1,22 +1,39 @@
 import { useEffect, useState } from "react";
-import { getInfoByCity } from "./apiUtils";
 
 export default function WeatherApp() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [data, setdata] = useState(null);
+  const [currentWeather, setCurrentWeather] = useState(null);
+  const [weatherForecast, setWeatherForecast] = useState(null);
+
   const bgImage =
-    "https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+    "https://images.unsplash.com/photo-1710169473427-eaed5969b91b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  const baseUrl = "http://api.weatherbit.io/v2.0";
 
-  const [cityName, setCityName] = useState("Default Name");
+  {
+    /*async function getCurrentData() {
+    axios.get(baseUrl + "/current", {
+      params: {
 
-  function handleClick() {}
+      }
+    })
+  }*/
+  }
 
   return (
     <section
-      className="flex h-screen w-screen bg-stone-800 bg-cover"
+      className="h-screen max-h-screen w-screen max-w-full bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <button onClick={handleClick} className="m-auto bg-stone-500/40 p-2">
-        {cityName}
-      </button>
+      <div className="absolute h-screen max-h-screen w-screen bg-black/35 "></div>
+      <div className="container flex flex-col">
+        <div className="bg-bottom text-center text-7xl font-semibold">
+          <span id="clock">12:00 PM</span>
+        </div>
+        <div className="h-10 overflow-hidden rounded-lg">
+          <input type="text" className="h-full w-full px-3" />
+        </div>
+      </div>
     </section>
   );
 }

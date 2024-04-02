@@ -9,7 +9,7 @@ export default function ProjectLanding() {
       <NavBar />
       <section className="font-inconsolata flex min-h-screen flex-col bg-stone-800 pt-32 text-stone-200">
         <div className="mb-10 flex place-content-center">
-          <table className=" w-full max-w-7xl caption-bottom sm:w-5/6">
+          <table className="w-full max-w-7xl caption-bottom sm:w-5/6">
             <caption className="text-center text-sm text-stone-200">
               Currently in the process of preparing and developing more projects
               for this list, stay tuned.
