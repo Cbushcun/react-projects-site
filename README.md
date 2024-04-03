@@ -1,8 +1,31 @@
-# React + Vite
+# Chris' React Projects Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a repository for managing and showcasing my React front-end based projects.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository serves as a project site to display my portfolio of front-end development projects built with React and Vite. It showcases my skills and expertise in creating interactive and responsive web applications using these technologies.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/react-projects-site.git
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+2. Open your browser and navigate to `http://localhost:3000` to view the site.
