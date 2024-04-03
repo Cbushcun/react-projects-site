@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "../stylesheets/WebDevIndex.css";
 
+import navArrow from "../assets/nav-arrow.svg";
+
 export default function WebDevNavBar({
   showNavProp,
   onNavClickProp,
@@ -21,11 +23,12 @@ export default function WebDevNavBar({
           <Link to="/introtowebdev">Christian Bush | IT3203</Link>
         </p>
         <p>Homepage</p>
-        <button onClick={onNavClickProp} id="nav-btn" className="gradient">
-          <i
-            id="nav-icon"
-            className={`${showNavProp ? "rotate-icon" : ""} fa-solid fa-square-caret-down`}
-          ></i>
+        <button onClick={onNavClickProp} id="nav-btn">
+          <img
+            src={navArrow}
+            alt="an svg button used to open and close the navigation tray"
+            className={`${showNavProp ? "flip-180" : ""} h-9`}
+          />
         </button>
       </nav>
     </>

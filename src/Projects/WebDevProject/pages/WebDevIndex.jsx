@@ -2,7 +2,7 @@ import "../stylesheets/WebDevIndex.css";
 import WebDevNavlist from "../components/WebDevNavlist";
 import WebDevNavbar from "../components/WebDevNavbar";
 
-import mySelfie from "../me.jpg";
+import mySelfie from "../assets/me.jpg";
 
 export default function WebDevIndex({ showNavProp, onNavClickProp }) {
   return (
