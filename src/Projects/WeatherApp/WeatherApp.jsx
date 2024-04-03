@@ -1,37 +1,64 @@
+/**
+ * WeatherApp component displays a weather application.
+ * It allows users to search for weather information by city.
+ */
 import { useEffect, useState } from "react";
 
+import "../../App.css";
+import FocusedWeather from "./components/FocusedWeather";
+import HourlyWeather from "./components/HourlyWeather";
+
 export default function WeatherApp() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [data, setdata] = useState(null);
-  const [currentWeather, setCurrentWeather] = useState(null);
-  const [weatherForecast, setWeatherForecast] = useState(null);
+  // variables holding icon data for the FocusedWeather and HourlyWeather components
+  const primaryIcon = {
+    icon: "CLEAR_DAY",
+    color: "goldenrod",
+    size: 150,
+    animate: true,
+  };
 
-  const bgImage =
-    "https://images.unsplash.com/photo-1710169473427-eaed5969b91b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-  const baseUrl = "http://api.weatherbit.io/v2.0";
-
-  {
-    /*async function getCurrentData() {
-    axios.get(baseUrl + "/current", {
-      params: {
-
-      }
-    })
-  }*/
-  }
+  const hourlyIcons = {
+    icon: "CLEAR_DAY",
+    color: "goldenrod",
+    size: 50,
+    animate: true,
+  };
 
   return (
-    <section
-      className="h-screen max-h-screen w-screen max-w-full bg-cover bg-no-repeat"
-      style={{ backgroundImage: `url(${bgImage})` }}
-    >
-      <div className="absolute h-screen max-h-screen w-screen bg-black/35 "></div>
+    <section className="font-inconsolata flex h-screen w-screen flex-col bg-blue-950 bg-cover p-3 text-stone-200">
       <div className="container flex flex-col">
-        <div className="bg-bottom text-center text-7xl font-semibold">
-          <span id="clock">12:00 PM</span>
+        <div className="mt-3 flex max-h-14 w-full">
+          <input
+            type="text"
+            name="search-bar"
+            id="searchBar"
+            className="w-5/6 rounded-l-full p-2"
+            placeholder="Search..."
+          />
+          <button className="flex w-1/6 min-w-14 rounded-r-full bg-amber-500 transition duration-150 hover:bg-amber-600 ">
+            <p className="m-auto">Search</p>
+          </button>
         </div>
-        <div className="h-10 overflow-hidden rounded-lg">
-          <input type="text" className="h-full w-full px-3" />
+        <FocusedWeather data={primaryIcon} />
+        <div className="mt-4 text-center">
+          <h1 className="text-5xl">Atlanta</h1>
+          <h5>30% chance of rain today</h5>
+        </div>
+        <div className="flex justify-between pt-3">
+          <HourlyWeather data={hourlyIcons} />
+          <HourlyWeather data={hourlyIcons} />
+          <HourlyWeather data={hourlyIcons} />
+          <HourlyWeather data={hourlyIcons} />
+          <HourlyWeather data={hourlyIcons} />
+          <HourlyWeather data={hourlyIcons} />
+        </div>
+        <div>
+          <table>
+            <thead>
+              <th></th>
+              <th>Temp</th>
+            </thead>
+          </table>
         </div>
       </div>
     </section>

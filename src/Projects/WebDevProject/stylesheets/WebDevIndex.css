@@ -1,3 +1,36 @@
+/**
+ * CSS Rules in order from outermost element to innermost from top to bottom in index.html. General rules at the bottom along with media queries
+ * 
+ * @cssrule * - Applies styles to all elements
+ * @cssrule .web-dev-body - Styles for the main container of the web development project
+ * @cssrule .ball-one - Styles for the first ball element
+ * @cssrule .ball-two - Styles for the second ball element
+ * @cssrule .backdrop-blur - Styles for the backdrop blur effect
+ * @cssrule header - Styles for the header element
+ * @cssrule header a - Styles for the links in the header
+ * @cssrule .nav - Styles for the navigation bar
+ * @cssrule .nav p - Styles for the paragraphs in the navigation bar
+ * @cssrule .container - Styles for the container element
+ * @cssrule main - Styles for the main content section
+ * @cssrule .selfie-container - Styles for the selfie container
+ * @cssrule .selfie - Styles for the selfie image
+ * @cssrule .content - Styles for the content section
+ * @cssrule .content h2 - Styles for the heading in the content section
+ * @cssrule aside - Styles for the aside element
+ * @cssrule ul .list-header.list-item - Styles for the list header item
+ * @cssrule .nav-list, .list-item - Styles for the navigation list and list items
+ * @cssrule .list-header .list-item - Styles for the list header item
+ * @cssrule .list-item a:hover - Styles for the hover effect on list item links
+ * @cssrule .list-item - Styles for the list items
+ * @cssrule .list-item a - Styles for the list item links
+ * @cssrule #nav-btn - Styles for the navigation button
+ * @cssrule #nav-btn img - Styles for the navigation button image
+ * @cssrule .funky-text - Styles for stylized text with gradient background
+ * @cssrule .inconsolata - Styles for the Inconsolata font
+ * @cssrule .flip-180 - Styles for flipping an element horizontally
+ * @cssrule .translate-full - Styles for translating an element fully
+ * @cssrule @media (max-width: 1008px) - Media query for responsive design
+ */
 /*
 *************************************************************
 CSS Rules in order from outermost element to innermost from
@@ -9,13 +42,14 @@ along with media queries
   z-index: 10;
 }
 .web-dev-body {
+  height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
   background-color: #1b1b1b;
   font-family: sans-serif, monospace;
   color: #dedcdc;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .ball-one {
   position: fixed;
@@ -72,7 +106,6 @@ header a:hover {
   top: 0;
   width: 100%;
   height: 3rem;
-  align-items: center;
   padding: 0 0 0 2rem;
   z-index: 100;
 }
@@ -85,23 +118,6 @@ header a:hover {
 }
 .nav p:nth-of-type(2) {
   font-weight: 800;
-}
-.nav .gradient {
-  background: linear-gradient(to bottom, #d8e87d 15%, #f2674b 50%, #d13b9c 75%);
-  justify-self: right;
-  list-style-type: none;
-  background-clip: text;
-  -webkit-background-clip: text;
-  border: none;
-  padding: 0 1rem;
-  transition: all 0.3s ease;
-}
-.nav .gradient:hover {
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.nav button:hover {
-  cursor: pointer;
 }
 .container {
   display: flex;
@@ -180,12 +196,12 @@ ul .list-header.list-item {
   height: 100%;
   padding: 5px 0;
 }
-i {
-  color: transparent;
-  font-size: 2.5rem;
-  transform: rotate(90deg);
+#nav-btn {
+  justify-self: right;
+  padding: 0 1rem;
+}
+#nav-btn img {
   transition: all 0.2s ease-out;
-  padding-top: 8px;
 }
 
 /*
@@ -215,8 +231,8 @@ General CSS rules applicable to anything using this stylesheet
   font-variation-settings: "wdth" 100;
 }
 
-.rotate-icon {
-  transform: rotate(270deg);
+.flip-180 {
+  transform: scaleX(-1);
 }
 
 .translate-full {
@@ -240,7 +256,6 @@ Media Queries
   }
   .content {
     margin: 0 auto;
-    max-width: 40rem;
     padding: 0 2rem;
   }
   .content h2 {

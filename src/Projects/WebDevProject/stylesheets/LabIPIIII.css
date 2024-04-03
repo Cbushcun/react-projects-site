@@ -1,31 +1,51 @@
+/**
+ * Stylesheet for the LabIPIIII component.
+ */
+
+/**
+ * Styles for the content container.
+ */
 .content {
   padding: 0 2rem;
 }
+
+/**
+ * Styles for the main heading.
+ */
 .content h1 {
   text-align: center;
   margin: 2rem 0;
   font-size: 4rem;
   line-height: 4rem;
 }
+
+/**
+ * Styles for the secondary heading.
+ */
 .content h2 {
   margin: 3rem 0 1.5rem;
   font-size: 3rem;
 }
+
+/**
+ * Styles for links within the secondary heading.
+ */
 h2 a {
   color: #f2674b;
   font-weight: 800;
   letter-spacing: 0.1rem;
 }
+
+/**
+ * Styles for the hover effect on links within the secondary heading.
+ */
 h2 a:hover {
   color: #d8e87d;
 }
 
-/*
-********************
-General use stylings
-********************
-*/
-
+/**
+ * General use stylings for backdrops.
+ */
 .backdrop {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(20px);

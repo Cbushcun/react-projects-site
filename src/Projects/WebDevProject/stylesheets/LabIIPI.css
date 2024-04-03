@@ -1,26 +1,57 @@
+/**
+ * This CSS file contains styles for the LabIIPI component in a web development project.
+ */
+
+/**
+ * Styles for the content container.
+ */
 .content {
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem 0;
   gap: 2rem;
 }
+
+/**
+ * Styles for the tool container.
+ */
 .tool-container {
   display: flex;
   gap: 2rem;
 }
+
+/**
+ * Styles for the second tool container within the content container.
+ * This container has a different flex direction and text alignment.
+ */
 .content .tool-container:nth-child(2) {
   flex-direction: row-reverse;
   text-align: right;
 }
+
+/**
+ * Styles for the images within the tool container.
+ * The images have rounded borders, reduced opacity, and a border color.
+ */
 .tool-container img {
   border-radius: 15%;
   opacity: 85%;
   border: 6px solid #f2674b;
 }
+
+/**
+ * Styles for the paragraphs within the tool container.
+ * The paragraphs have margin and a maximum width.
+ */
 .tool-container p {
   margin: auto 0;
   max-width: 15rem;
 }
+
+/**
+ * Media query styles for screens with a maximum width of 800px.
+ * Changes the layout of the tool container and its contents.
+ */
 @media (max-width: 800px) {
   .tool-container {
     display: grid;

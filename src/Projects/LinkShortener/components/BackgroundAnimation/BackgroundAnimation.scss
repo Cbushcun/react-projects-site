@@ -1,12 +1,16 @@
-/* 
-Code for background animation (Generated from https://wweb.dev/resources/animated-css-background-generator)
-*/
+/**
+ * Code for background animation (Generated from https://wweb.dev/resources/animated-css-background-generator)
+ */
+
 @keyframes move {
   100% {
     transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 
+/**
+ * Styles for the background container.
+ */
 .background {
   position: fixed;
   width: 100vw;
@@ -38,6 +42,7 @@ Code for background animation (Generated from https://wweb.dev/resources/animate
   transform-origin: -17vw 19vh;
   box-shadow: -100vmin 0 13.051661036589024vmin currentColor;
 }
+
 .background span:nth-child(1) {
   color: #01a362;
   top: 2%;

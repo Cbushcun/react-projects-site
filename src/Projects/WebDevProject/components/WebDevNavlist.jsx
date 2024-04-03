@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import "../stylesheets/WebDevIndex.css";
 
+/**
+ * Renders a navigation list for a web development project.
+ * @param {Object} props - The component props.
+ * @param {boolean} props.showNavProp - Determines whether to show the navigation list.
+ * @returns {JSX.Element} The rendered navigation list component.
+ */
 export default function WebDevNavlist({ showNavProp }) {
   return (
     <>

@@ -1,22 +1,34 @@
+/**
+ * This CSS file contains styles for the LabIIIPI project in a web development project.
+ * It defines various classes for different background colors and sets the width and padding for the content.
+ * It also includes media queries to adjust the layout for different screen sizes.
+ */
+
 .pnk {
   background-color: #c94d9e;
 }
+
 .blu {
   background-color: #4d51c9;
 }
+
 .grn {
   background-color: #3a9c45;
 }
+
 .red {
   background-color: #9c423a;
 }
+
 .content {
   width: 100%;
   padding: 0;
 }
+
 main:has(ol) {
   width: 30%;
 }
+
 @media (max-width: 1008px) {
   main {
     width: 100%;
