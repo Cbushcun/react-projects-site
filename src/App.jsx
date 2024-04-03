@@ -1,6 +1,5 @@
 import ProjectLanding from "./Pages/ProjectLanding/ProjectLanding"; // project table homepage (https://www.projects.businessbybush.com)
 import LinkShortenerApp from "./Projects/LinkShortener/LinkShortenerApp"; // URL Shortener project
-
 import WeatherApp from "./Projects/WeatherApp/WeatherApp"; // Weather App project
 import NotFound from "./Pages/NotFound"; // 404
 
@@ -86,8 +85,8 @@ function App() {
           />
           {/* Link Shortener */}
           <Route path="/link-shortener" element={<LinkShortenerApp />} />
-          {/* WeatherApp routes
-          <Route path="/weather" element={<WeatherApp />} />*/}
+          {/* WeatherApp routes*/}
+          <Route path="/weather" element={<WeatherApp />} />
           {/* Error routing */}
           <Route path="/*" element={<NotFound />} />
         </Routes>
