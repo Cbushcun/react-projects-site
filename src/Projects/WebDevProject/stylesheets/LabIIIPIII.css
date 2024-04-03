@@ -1,33 +1,71 @@
+/**
+ * FILEPATH: /c:/Users/milky/source/repos/react-projects-site/src/Projects/WebDevProject/stylesheets/LabIIIPIII.css
+ * 
+ * This CSS file contains styles for the LabIIIPIII project.
+ */
+
+/**
+ * Styles for the main container element.
+ */
 main {
   width: 60%;
 }
+
+/**
+ * Styles for the content container element.
+ */
 .content {
   margin: auto;
   width: 35rem;
   padding: 0;
 }
+
+/**
+ * Styles for the table element.
+ */
 table {
   width: 100%;
   background-color: #4ac0c2;
   border-collapse: collapse;
   backdrop-filter: blur(50px);
 }
+
+/**
+ * Styles for even rows in the table.
+ */
 table tr:nth-child(even) {
   background: #4dab44;
 }
+
+/**
+ * Styles for table rows, table headers, and table cells.
+ */
 tr,
 th,
 td {
   border: 3px solid #424242;
 }
+
+/**
+ * Styles for table cells.
+ */
 td {
   color: black;
   padding: 0 1rem;
 }
+
+/**
+ * Styles for table headers.
+ */
 th {
   background-color: #316b2c;
   padding: 0.5rem 1rem;
 }
+
+/**
+ * Media query for responsive design.
+ * Adjusts the styles when the viewport width is less than or equal to 1008px.
+ */
 @media (max-width: 1008px) {
   main {
     width: 100%;

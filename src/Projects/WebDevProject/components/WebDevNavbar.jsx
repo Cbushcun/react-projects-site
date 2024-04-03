@@ -4,6 +4,16 @@ import "../stylesheets/WebDevIndex.css";
 
 import navArrow from "../assets/nav-arrow.svg";
 
+/**
+ * Renders the navigation bar component for the web development project.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {boolean} props.showNavProp - Determines whether the navigation tray is visible.
+ * @param {function} props.onNavClickProp - The function to be called when the navigation button is clicked.
+ * @param {string} props.tabTitleText - The title text for the browser tab.
+ * @returns {JSX.Element} The rendered navigation bar component.
+ */
 export default function WebDevNavBar({
   showNavProp,
   onNavClickProp,

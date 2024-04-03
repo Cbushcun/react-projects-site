@@ -17,15 +17,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
-// Multi-route pages are not included in this App.jsx and are instead located within their respective ProjectNameApp.jsx files due to maintaing proper scope. Undisplayed endpoints and their state, functions, and locations are as follows:
-
-// /introtowebdev located in /Projects/WebDevProject
-
-// TODO: Add rest of web dev project. Look over Lab1P4 and implement rest
+/**
+ * The main component of the application.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered App component
+ */
 function App() {
   // /introtowebdev state management
   const [showNav, setshowNav] = useState(false);
 
+  /**
+   * Toggles the value of `showNav` state.
+   */
   function onNavClick() {
     setshowNav(!showNav);
   } // end /introtowebdev

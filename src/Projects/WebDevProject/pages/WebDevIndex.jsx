@@ -4,6 +4,14 @@ import WebDevNavbar from "../components/WebDevNavbar";
 
 import mySelfie from "../assets/me.jpg";
 
+/**
+ * Renders the WebDevIndex component.
+ *
+ * @param {Object} props - The component props.
+ * @param {boolean} props.showNavProp - Determines whether to show the navigation.
+ * @param {function} props.onNavClickProp - The function to be called when the navigation is clicked.
+ * @returns {JSX.Element} The rendered WebDevIndex component.
+ */
 export default function WebDevIndex({ showNavProp, onNavClickProp }) {
   return (
     <>

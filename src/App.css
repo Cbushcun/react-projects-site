@@ -1,7 +1,16 @@
+/**
+ * This CSS file contains the styles for the App component in the React project.
+ * It imports the necessary stylesheets from the Tailwind CSS library and defines
+ * additional styles for the HTML and a custom font class.
+ */
+
 @import "../node_modules/tailwindcss/base.css";
 @import "../node_modules/tailwindcss/components.css";
 @import "../node_modules/tailwindcss/utilities.css";
 
+/**
+ * Styles for the HTML element.
+ */
 html {
   font-family: "Lucida Console", "Arial", monospace;
   font-optical-sizing: auto;
@@ -10,6 +19,9 @@ html {
   font-variation-settings: "wdth" 100;
 }
 
+/**
+ * Styles for the custom font class "font-inconsolata".
+ */
 .font-inconsolata {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;

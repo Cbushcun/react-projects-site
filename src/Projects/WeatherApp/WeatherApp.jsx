@@ -1,11 +1,15 @@
+/**
+ * WeatherApp component displays a weather application.
+ * It allows users to search for weather information by city.
+ */
 import { useEffect, useState } from "react";
-import { getInfoByCity } from "./apiUtils";
 
 import "../../App.css";
 import FocusedWeather from "./components/FocusedWeather";
 import HourlyWeather from "./components/HourlyWeather";
 
 export default function WeatherApp() {
+  // variables holding icon data for the FocusedWeather and HourlyWeather components
   const primaryIcon = {
     icon: "CLEAR_DAY",
     color: "goldenrod",

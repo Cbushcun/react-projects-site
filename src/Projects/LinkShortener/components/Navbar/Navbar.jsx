@@ -1,3 +1,8 @@
+/**
+ * Renders the navigation bar component.
+ *
+ * @returns {JSX.Element} The rendered navigation bar.
+ */
 import "./Navbar.scss";
 
 export default function Navbar() {

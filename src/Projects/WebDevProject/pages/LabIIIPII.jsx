@@ -4,6 +4,14 @@ import WebDevNavbar from "../components/WebDevNavbar";
 
 import "../stylesheets/LabIIIPII.css";
 
+/**
+ * Renders the LabIIIPII component.
+ *
+ * @param {Object} props - The component props.
+ * @param {boolean} props.showNavProp - Determines whether to show the navigation bar.
+ * @param {function} props.onNavClickProp - The callback function for navigation clicks.
+ * @returns {JSX.Element} The LabIIIPII component.
+ */
 export default function LabIIIPII({ showNavProp, onNavClickProp }) {
   return (
     <div className="web-dev-body">

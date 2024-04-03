@@ -1,3 +1,4 @@
+// Import the ReactAnimatedWeather component from the "react-animated-weather" library
 import ReactAnimatedWeather from "react-animated-weather";
 
 export default function HourlyWeather({ data }) {

@@ -8,6 +8,14 @@ import chisels from "../tools/chisels.jpg";
 import farmHoe from "../tools/hoe.jpg";
 import saw from "../tools/saw.jpg";
 
+/**
+ * Renders the LabIIPI component.
+ *
+ * @param {Object} props - The component props.
+ * @param {boolean} props.showNavProp - Determines whether to show the navigation bar.
+ * @param {function} props.onNavClickProp - The function to be called when a navigation item is clicked.
+ * @returns {JSX.Element} The LabIIPI component.
+ */
 export default function LabIIPI({ showNavProp, onNavClickProp }) {
   return (
     <div className="web-dev-body">

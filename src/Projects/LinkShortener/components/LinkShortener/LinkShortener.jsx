@@ -41,41 +41,27 @@ export function LinkResult({ showComponent, shortLink, loading }) {
   );
 }
 
+/**
+ * Component for the Link Shortener feature.
+ *
+ * @returns {JSX.Element} The LinkShortener component.
+ */
 export default function LinkShortener() {
+  // State variables
   const [inputValue, setInputValue] = useState("");
   const [shortLink, setShortLink] = useState("");
   const [showLinkResult, setShowLinkResult] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  /**
+   * Fetches the shortened link from the API.
+   *
+   * @returns {Promise<void>} A Promise that resolves when the API call is complete.
+   */
   const fetchLink = async () => {
     try {
       setLoading(true);
       // Axios post method to tinyURL for data on shortened link into 'result' variable
-      // example data response:
-      /*{
-          "data": {
-            "domain": "tinyurl.com",
-            "alias": "example-alias",
-            "deleted": false,
-            "archived": false,
-            "tags": [
-              "tag1",
-              "tag2"
-            ],
-            "analytics": [
-              {
-                "enabled": true,
-                "public": false
-              }
-            ],
-            "tiny_url": "https://tinyurl.com/example-alias",
-            "created_at": "2022-11-24T19:41:23+00:00",
-            "expires_at": null,
-            "url": "http://google.com"
-          },
-          "code": 0,
-          "errors": []
-        } */
       const result = await axios({
         method: "post",
         url: "https://api.tinyurl.com/create",
@@ -101,7 +87,11 @@ export default function LinkShortener() {
     }
   };
 
-  // handleClick function for 'Shorten' button to obtain input value, process api request and show result
+  /**
+   * Handles the click event of the 'Shorten' button.
+   *
+   * @returns {Promise<void>} A Promise that resolves when the API call is complete.
+   */
   const handleClick = async () => {
     setShortLink(inputValue);
     await fetchLink();
@@ -117,7 +107,7 @@ export default function LinkShortener() {
           Link Shortener
         </h1>
         {/* Container for input field and 'Shorten' button */}
-        <div className="input-group shadow slide-in-bottom">
+        <div className="input-group slide-in-bottom shadow">
           {/* Input field */}
           <input
             type="text"
