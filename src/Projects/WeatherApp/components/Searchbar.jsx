@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function SearchBar({ setLat, setLon }) {
-  const geoCodeURI = "http://api.openweathermap.org/geo/1.0/direct?";
+  const geoCodeURI = "https://api.openweathermap.org/geo/1.0/direct?";
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const searchBar = document.getElementById("searchBar");

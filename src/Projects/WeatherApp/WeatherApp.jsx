@@ -35,7 +35,7 @@ export default function WeatherApp() {
     daily: [],
   });
   // State/Variable: URI Links for fetching data
-  const geoCodeURI = "http://api.openweathermap.org/geo/1.0/reverse?";
+  const geoCodeURI = "https://api.openweathermap.org/geo/1.0/reverse?";
   const oneCallURI = "https://api.openweathermap.org/data/3.0/onecall?";
 
   // Function: Get location name from coordinates TODO:
