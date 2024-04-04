@@ -4,7 +4,7 @@
       "name": "Weather API App",
       "year": "2024",
       "desc": "Weather application designed to utilize OpenWeatherMap API to display weather data for a given city. Developed and designed by myself",
-      "technologies": "ReactJS, OpenWeatherAPI, TailwindCSS. Axios",
+      "technologies": "ReactJS, OpenWeatherAPI, TailwindCSS, Axios",
       "designer": "Myself",
       "imgLink": "https://i.imgur.com/jFxMmpm.png",
       "repoLink": "https://github.com/Cbushcun/react-projects-site/tree/main/src/Projects/WeatherApp",
