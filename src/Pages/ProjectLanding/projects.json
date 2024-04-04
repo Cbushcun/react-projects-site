@@ -1,10 +1,21 @@
 {
   "projects": [
     {
+      "name": "Weather API App",
+      "year": "2024",
+      "desc": "Weather application designed to utilize OpenWeatherMap API to display weather data for a given city. Developed and designed by myself",
+      "technologies": "ReactJS, OpenWeatherAPI, TailwindCSS. Axios",
+      "designer": "Myself",
+      "imgLink": "https://i.imgur.com/jFxMmpm.png",
+      "repoLink": "https://github.com/Cbushcun/react-projects-site/tree/main/src/Projects/WeatherApp",
+      "hrefLink": "/weather",
+      "liveLink": "https://www.businessbybush.com/weather"
+    },
+    {
       "name": "React Portfolio v1",
       "year": "2024",
       "desc": "React portfolio developed and designed by myself",
-      "technologies": "ReactJS, PokeAPI",
+      "technologies": "ReactJS",
       "designer": "Myself",
       "imgLink": "",
       "repoLink": "https://github.com/Cbushcun/react-portfolio",
