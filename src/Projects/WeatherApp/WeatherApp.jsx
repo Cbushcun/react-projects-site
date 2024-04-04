@@ -133,7 +133,7 @@ export default function WeatherApp() {
     getWeatherData(lat, lon, iconSize);
   }, [cityState.city, cityState.state, temperatureUnit, lat, lon]);
   return (
-    <section className="font-inconsolata flex h-screen w-screen flex-col bg-blue-950 bg-cover p-3 text-stone-200">
+    <section className="font-inconsolata min-w-screen flex h-fit min-h-screen w-full flex-col bg-blue-950 p-3 text-stone-200">
       <div className="container mx-auto flex h-full max-w-4xl flex-col justify-between pb-10">
         <SearchBar setLat={setLat} setLon={setLon} geoCodeURI={geoCodeURI} />
         <FocusedWeather data={weatherData} />
