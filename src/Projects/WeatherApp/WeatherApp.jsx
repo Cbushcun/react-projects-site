@@ -35,13 +35,18 @@ export default function WeatherApp() {
     daily: [],
   });
   // State/Variable: URI Links for fetching data
-  const geoCodeURI = "https://api.openweathermap.org/geo/1.0/reverse?";
+  const geoCodeReverseURI = "https://api.openweathermap.org/geo/1.0/reverse?";
   const oneCallURI = "https://api.openweathermap.org/data/3.0/onecall?";
 
-  // Function: Get location name from coordinates TODO:
+  /**
+   * Retrieves the location name based on the provided latitude and longitude.
+   * @param {number} lat - The latitude of the location.
+   * @param {number} lon - The longitude of the location.
+   * @returns {Promise<void>} - A promise that resolves when the location name is retrieved.
+   */
   const getLocationName = async (lat, lon) => {
     try {
-      const response = await axios.get(geoCodeURI, {
+      const response = await axios.get(geoCodeReverseURI, {
         params: {
           lat,
           lon,
@@ -62,7 +67,14 @@ export default function WeatherApp() {
     }
   };
 
-  // Function: Get data from coordinates
+  /**
+   * Fetches weather data from the API based on latitude, longitude, and icon size.
+   *
+   * @param {number} lat - The latitude of the location.
+   * @param {number} lon - The longitude of the location.
+   * @param {string} iconSize - The size of the weather icons.
+   * @returns {Promise<void>} - A promise that resolves when the weather data is fetched and set.
+   */
   const getWeatherData = async (lat, lon, iconSize) => {
     getLocationName(lat, lon);
     setIconSize(iconSize);
@@ -113,7 +125,9 @@ export default function WeatherApp() {
     }
   };
 
-  // Function: Obtain user lat/lon from browser and fetch data
+  /**
+   * Retrieves weather data from the user's current location.
+   */
   const getWeatherDataFromLocation = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       setLat(position.coords.latitude);
@@ -126,16 +140,20 @@ export default function WeatherApp() {
     });
   };
 
+  // Effect: Fetch weather data from the user's current location on initial load
   useEffect(() => {
     getWeatherDataFromLocation();
   }, []);
+
+  // Effect: Fetch weather data based on the city, state, temperature unit, latitude, and longitude updates
   useEffect(() => {
     getWeatherData(lat, lon, iconSize);
   }, [cityState.city, cityState.state, temperatureUnit, lat, lon]);
+
   return (
     <section className="font-inconsolata min-w-screen flex h-fit min-h-screen w-full flex-col bg-blue-950 p-3 text-stone-200">
       <div className="container mx-auto flex h-full max-w-4xl flex-col justify-between pb-10">
-        <SearchBar setLat={setLat} setLon={setLon} geoCodeURI={geoCodeURI} />
+        <SearchBar setLat={setLat} setLon={setLon} />
         <FocusedWeather data={weatherData} />
         <ForecastByHour data={weatherData} />
         <ForecastTable data={weatherData} />

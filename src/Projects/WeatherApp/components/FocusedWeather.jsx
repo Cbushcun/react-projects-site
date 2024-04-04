@@ -1,16 +1,17 @@
 /**
  * Renders the focused weather component.
  *
- * @param {Object} data - The weather data.
- * @param {string} data.icon - The name of the weather icon.
- * @param {string} data.color - The color of the weather icon.
- * @param {number} data.size - The size of the weather icon.
- * @param {boolean} data.animate - Whether to animate the weather icon.
- * @returns {JSX.Element} The rendered focused weather component.
+ * @param {Object} props - The component props.
+ * @param {Object} props.data - The weather data.
+ * @returns {JSX.Element} The rendered component.
  */
-
 export default function FocusedWeather({ data }) {
-  // Function: set string to title case
+  /**
+   * Converts a string to title case.
+   *
+   * @param {string} str - The string to convert.
+   * @returns {string} The converted string in title case.
+   */
   const toTitleCase = (str) => {
     if (str) {
       return str.replace(/\b\w/g, (char) => char.toUpperCase());

@@ -1,3 +1,10 @@
+/**
+ * Renders a table row for the weather forecast.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.data - The weather data for the row.
+ * @returns {JSX.Element} The rendered table row.
+ */
 export default function ForecastTableRow({ data }) {
   //current day variable to check if the day is today
   const currentDay = new Date().toLocaleDateString([], {

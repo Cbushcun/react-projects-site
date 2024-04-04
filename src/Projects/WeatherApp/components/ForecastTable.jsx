@@ -1,5 +1,13 @@
 import ForecastTableRow from "./ForecastTableRow";
 
+/**
+ * Renders a table displaying the weather forecast.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Object} props.data - The weather forecast data.
+ * @returns {JSX.Element} The rendered table component.
+ */
 export default function ForecastTable({ data }) {
   return (
     <table className="w-full text-center text-lg">

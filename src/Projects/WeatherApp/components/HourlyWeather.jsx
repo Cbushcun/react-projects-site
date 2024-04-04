@@ -1,5 +1,9 @@
-import "../stylesheets/WeatherApp.css";
-
+/**
+ * Renders the hourly weather component.
+ * @param {Object} props - The component props.
+ * @param {Object} props.data - The weather data for the hour.
+ * @returns {JSX.Element} The rendered component.
+ */
 export default function HourlyWeather({ data }) {
   // obtain current time to check if data.timeLocal is the current hour
   const currentTime = new Date().toLocaleTimeString([], {

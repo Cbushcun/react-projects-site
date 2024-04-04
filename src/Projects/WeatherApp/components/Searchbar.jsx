@@ -1,16 +1,27 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+/**
+ * SearchBar component for searching locations and updating latitude and longitude.
+ * @param {Object} props - The component props.
+ * @param {function} props.setLat - The function to update the latitude.
+ * @param {function} props.setLon - The function to update the longitude.
+ * @returns {JSX.Element} The SearchBar component.
+ */
 export default function SearchBar({ setLat, setLon }) {
-  const geoCodeURI = "https://api.openweathermap.org/geo/1.0/direct?";
+  const geoCodeDirectURI = "https://api.openweathermap.org/geo/1.0/direct?";
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const searchBar = document.getElementById("searchBar");
 
-  // Function: get coordinates from location name
+  /**
+   * Fetches coordinates from location name using the OpenWeatherMap API.
+   * @param {string} searchTerm - The search term for the location.
+   * @returns {Promise<void>} A promise that resolves when the data is fetched.
+   */
   const fetchData = async (searchTerm) => {
     try {
-      const response = await axios.get(geoCodeURI, {
+      const response = await axios.get(geoCodeDirectURI, {
         params: {
           q: searchTerm,
           limit: 5,
@@ -26,13 +37,21 @@ export default function SearchBar({ setLat, setLon }) {
       setSearchResults([]);
     }
   };
-  // Fuction: handle click to update lat and lon on button click
+
+  /**
+   * Handles the click event to update the latitude and longitude on button click.
+   */
   const handleClick = () => {
     setLat(searchResults[0].lat);
     setLon(searchResults[0].lon);
     setSearchTerm("");
     setSearchResults([]);
   };
+
+  /**
+   * Handles the key down event to update the latitude and longitude on Enter key press.
+   * @param {Object} e - The key down event object.
+   */
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && searchResults.length > 0) {
       e.preventDefault(); // prevent form submission
@@ -44,6 +63,7 @@ export default function SearchBar({ setLat, setLon }) {
       setSearchResults([]);
     }
   };
+
   useEffect(() => {
     if (searchTerm.length > 2) {
       fetchData(searchTerm);
@@ -51,6 +71,7 @@ export default function SearchBar({ setLat, setLon }) {
       setSearchResults([]);
     }
   }, [searchTerm]);
+
   return (
     <div className="z-50 mt-3 flex max-h-14 w-full flex-col font-semibold text-stone-900">
       <span className="flex">
