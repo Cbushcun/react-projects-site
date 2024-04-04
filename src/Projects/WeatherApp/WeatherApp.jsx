@@ -92,7 +92,7 @@ export default function WeatherApp() {
             }),
             temp: Math.round(hour.temp),
             icon: `https://openweathermap.org/img/wn/${hour.weather[0].icon}${iconSize}`,
-            rain: hour.rain ? hour.rain["1h"] : 0,
+            rain: hour.rain ? Math.round(hour.rain["1h"] * 100) : 0,
           }))
           .slice(0, 6),
         daily: data.daily
@@ -103,7 +103,7 @@ export default function WeatherApp() {
             weather: day.weather[0].main,
             high: Math.round(day.temp.max),
             low: Math.round(day.temp.min),
-            rain: day.pop ? Math.round(day.pop) : 0,
+            rain: day.pop ? Math.round(day.pop * 100) : 0,
             wind: Math.round(day.wind_speed),
           }))
           .slice(0, 7),
