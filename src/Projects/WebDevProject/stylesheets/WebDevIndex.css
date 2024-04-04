@@ -10,7 +10,7 @@
  * @cssrule header a - Styles for the links in the header
  * @cssrule .nav - Styles for the navigation bar
  * @cssrule .nav p - Styles for the paragraphs in the navigation bar
- * @cssrule .container - Styles for the container element
+ * @cssrule .web-dev-container - Styles for the container element
  * @cssrule main - Styles for the main content section
  * @cssrule .selfie-container - Styles for the selfie container
  * @cssrule .selfie - Styles for the selfie image
@@ -119,7 +119,7 @@ header a:hover {
 .nav p:nth-of-type(2) {
   font-weight: 800;
 }
-.container {
+.web-dev-container {
   display: flex;
   flex-grow: 1;
 }
@@ -253,6 +253,7 @@ Media Queries
     flex-direction: column;
     width: 100%;
     background: transparent;
+    margin: 0 auto;
   }
   .content {
     margin: 0 auto;

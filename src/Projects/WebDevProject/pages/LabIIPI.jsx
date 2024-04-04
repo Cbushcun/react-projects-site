@@ -27,7 +27,7 @@ export default function LabIIPI({ showNavProp, onNavClickProp }) {
         onNavClickProp={onNavClickProp}
         tabTitleText="Lab 2 Pt 1 IT3203"
       />
-      <div className="container">
+      <div className="web-dev-container">
         <main className="backdrop">
           <div className="content inconsolata">
             <div className="tool-container">

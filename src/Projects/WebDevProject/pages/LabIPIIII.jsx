@@ -23,7 +23,7 @@ export default function LabIPIIII({ showNavProp, onNavClickProp }) {
         onNavClickProp={onNavClickProp}
         tabTitleText="Lab 1 Pt 4 IT3203"
       />
-      <div class="container">
+      <div class="web-dev-container">
         <main>
           <article class="content inconsolata backdrop">
             <h1 class="funky-text">Webpage UI Design Reviews</h1>

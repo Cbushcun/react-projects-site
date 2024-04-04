@@ -6,7 +6,7 @@
 /**
  * Styles for the content element that contains a table.
  */
-.content:has(table) {
+.web-dev-body .content:has(table) {
   margin: auto;
   width: 35rem;
   padding: 0;
@@ -15,7 +15,7 @@
 /**
  * Styles for the table element within the content element.
  */
-.content table {
+.web-dev-body .content table {
   width: 100%;
   border-collapse: collapse;
 }
@@ -24,7 +24,7 @@
  * Styles for all table elements.
  * Applies a backdrop filter with a blur effect.
  */
-table {
+.web-dev-body table {
   backdrop-filter: blur(50px);
 }
 
@@ -32,7 +32,7 @@ table {
  * Styles for the table header cells.
  * Sets a background color with 50% opacity and adds padding.
  */
-table th {
+.web-dev-body table th {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5rem 1rem;
 }
@@ -41,7 +41,7 @@ table th {
  * Styles for the table data cells.
  * Sets a background color with 30% opacity and adds padding.
  */
-table td {
+.web-dev-body table td {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0 1rem;
 }

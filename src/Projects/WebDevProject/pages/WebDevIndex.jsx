@@ -31,9 +31,9 @@ export default function WebDevIndex({ showNavProp, onNavClickProp }) {
           onNavClickProp={onNavClickProp}
           tabTitleText="Christian IT3203 Homepage"
         />
-        <div className="container">
+        <div className="web-dev-container">
           <main>
-            <div className="selfie-container">
+            <div className="selfie-web-dev-container">
               <img
                 src={mySelfie}
                 className="selfie"

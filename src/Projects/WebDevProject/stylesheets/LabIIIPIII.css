@@ -1,6 +1,4 @@
 /**
- * FILEPATH: /c:/Users/milky/source/repos/react-projects-site/src/Projects/WebDevProject/stylesheets/LabIIIPIII.css
- * 
  * This CSS file contains styles for the LabIIIPIII project.
  */
 
@@ -23,7 +21,7 @@ main {
 /**
  * Styles for the table element.
  */
-table {
+.web-dev-body table {
   width: 100%;
   background-color: #4ac0c2;
   border-collapse: collapse;
@@ -33,23 +31,23 @@ table {
 /**
  * Styles for even rows in the table.
  */
-table tr:nth-child(even) {
+.web-dev-body table tr:nth-child(even) {
   background: #4dab44;
 }
 
 /**
  * Styles for table rows, table headers, and table cells.
  */
-tr,
-th,
-td {
+.web-dev-body tr,
+.web-dev-body th,
+.web-dev-body td {
   border: 3px solid #424242;
 }
 
 /**
  * Styles for table cells.
  */
-td {
+.web-dev-body td {
   color: black;
   padding: 0 1rem;
 }
@@ -57,7 +55,7 @@ td {
 /**
  * Styles for table headers.
  */
-th {
+.web-dev-body th {
   background-color: #316b2c;
   padding: 0.5rem 1rem;
 }

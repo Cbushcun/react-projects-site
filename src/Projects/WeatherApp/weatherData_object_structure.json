@@ -1,0 +1,30 @@
+{
+  "current": {
+    "temp": "data.current.temp",
+    "feels_like": "data.current.feels_like",
+    "weather": "data.current.weather[0].description",
+    "icon": "getIcon(data.current.weather[0].icon)",
+    "rain": "data.minutely[0].precipitation",
+    "tempHigh": "data.daily[0].temp.max",
+    "tempLow": "data.daily[0].temp.min",
+    "wind": "data.current.wind_speed"
+  },
+  "hourly": [
+    {
+      "temp": "hour.temp",
+      "time": "hour.dt",
+      "icon": "getIcon(hour.weather[0].icon)",
+      "rain": "hour.pop"
+    }
+  ],
+  "daily": [
+    {
+      "tempHigh": "day.temp.max",
+      "tempLow": "day.temp.min",
+      "weather": "day.weather[0].main",
+      "icon": "getIcon(day.weather[0].icon)",
+      "rain": "day.pop",
+      "wind": "day.wind_speed"
+    }
+  ]
+}

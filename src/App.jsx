@@ -11,6 +11,7 @@ import LabIIPII from "./Projects/WebDevProject/pages/LabIIPII";
 import LabIIIPI from "./Projects/WebDevProject/pages/LabIIIPI";
 import LabIIIPII from "./Projects/WebDevProject/pages/LabIIIPII";
 import LabIIIPIII from "./Projects/WebDevProject/pages/LabIIIPIII";
+import PokedexApp from "./Projects/PokedexApp/PokedexApp";
 
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -85,6 +86,9 @@ function App() {
           />
           {/* Link Shortener */}
           <Route path="/link-shortener" element={<LinkShortenerApp />} />
+          {/* Pokedex Routes */}
+          <Route path="/pokemon" element={<PokedexApp />} />
+          {/* Pokemon Routes */}
           {/* WeatherApp routes*/}
           <Route path="/weather" element={<WeatherApp />} />
           {/* Error routing */}

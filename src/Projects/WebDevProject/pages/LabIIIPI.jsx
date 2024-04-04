@@ -23,7 +23,7 @@ export default function LabIIIPI({ showNavProp, onNavClickProp }) {
         onNavClickProp={onNavClickProp}
         tabTitleText="Lab 3 Pt 1 IT3203"
       />
-      <div className="container">
+      <div className="web-dev-container">
         <main>
           <div className="content inconsolata">
             <ol type="I">

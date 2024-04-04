@@ -24,7 +24,10 @@ export default function ProjectLanding() {
             </thead>
             <tbody>
               {projectsData.projects.map((project, index) => (
-                <tr className={`${index % 2 === 0 ? "" : "bg-stone-700"}`}>
+                <tr
+                  key={index}
+                  className={`${index % 2 === 0 ? "" : "bg-stone-700"}`}
+                >
                   <td className="whitespace-nowrap py-1 pl-5">
                     {project.name}
                   </td>
