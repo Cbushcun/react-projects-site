@@ -148,7 +148,7 @@ export default function WeatherApp() {
   // Effect: Fetch weather data based on the city, state, temperature unit, latitude, and longitude updates
   useEffect(() => {
     getWeatherData(lat, lon, iconSize);
-  }, [cityState.city, cityState.state, temperatureUnit, lat, lon]);
+  }, [cityState.city, cityState.state, temperatureUnit]);
 
   return (
     <section className="font-inconsolata min-w-screen flex h-fit min-h-screen w-full flex-col bg-blue-950 p-3 text-stone-200">
