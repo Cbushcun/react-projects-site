@@ -10,22 +10,26 @@ import ForecastTableRow from "./ForecastTableRow";
  */
 export default function ForecastTable({ data }) {
   return (
-    <table className="w-full text-center text-lg">
-      <thead className="border-primary border-b-2">
-        <tr>
-          <th></th>
-          <th>Weather</th>
-          <th>High</th>
-          <th>Low</th>
-          <th>Rain</th>
-          <th>Wind</th>
-        </tr>
-      </thead>
-      <tbody className="border-secondary">
-        {data.daily.map((day, index) => (
-          <ForecastTableRow key={index} data={day} />
-        ))}
-      </tbody>
-    </table>
+    <div className="flex flex-col overflow-auto rounded-xl">
+      <span className="bg-stone-200/30 text-center text-xl">
+        7-Day Forecast
+      </span>
+      <table className="w-full bg-stone-200/20 text-center text-lg">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Weather</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Rain</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.daily.map((day, index) => (
+            <ForecastTableRow key={index} data={day} />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
