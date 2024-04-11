@@ -9,10 +9,15 @@ import HourlyWeather from "./HourlyWeather";
  */
 export default function ForecastByHour({ data }) {
   return (
-    <div className="mx-auto flex w-full justify-between overflow-x-auto">
-      {data.hourly.map((hour, index) => (
-        <HourlyWeather key={index} data={hour} />
-      ))}
+    <div className="flex flex-col overflow-auto rounded-xl">
+      <span className="bg-stone-200/30 text-center text-xl">
+        Hourly Weather
+      </span>
+      <div className="flex justify-between bg-stone-200/20 py-3">
+        {data.hourly.map((hour, index) => (
+          <HourlyWeather key={index} data={hour} />
+        ))}
+      </div>
     </div>
   );
 }

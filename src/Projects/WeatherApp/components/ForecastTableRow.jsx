@@ -13,7 +13,7 @@ export default function ForecastTableRow({ data }) {
   return (
     <tr className="border-b-[1px] last-of-type:border-b-0">
       <th
-        className={`${data.timeLocal === currentDay ? "f font-black text-amber-500" : "font-medium"} text-left`}
+        className={`${data.timeLocal === currentDay ? "f font-black text-amber-500" : "font-medium"} pl-3 text-left`}
       >
         {data.timeLocal === currentDay ? "Today" : data.timeLocal}
       </th>
@@ -21,7 +21,6 @@ export default function ForecastTableRow({ data }) {
       <td>{data.high}&deg;</td>
       <td>{data.low}&deg;</td>
       <td>{data.rain}%</td>
-      <td>{data.wind} mph</td>
     </tr>
   );
 }

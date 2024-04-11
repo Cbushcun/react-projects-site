@@ -152,7 +152,7 @@ export default function WeatherApp() {
 
   return (
     <section className="font-inconsolata min-w-screen flex h-fit min-h-screen w-full flex-col bg-blue-950 p-3 text-stone-200">
-      <div className="container mx-auto flex h-full max-w-4xl flex-col justify-between pb-10">
+      <div className="container mx-auto flex h-full max-w-4xl flex-col justify-between gap-3 pb-10">
         <SearchBar setLat={setLat} setLon={setLon} />
         <FocusedWeather data={weatherData} />
         <ForecastByHour data={weatherData} />

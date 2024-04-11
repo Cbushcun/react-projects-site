@@ -21,6 +21,7 @@ export default function FocusedWeather({ data }) {
   return (
     <div className="flex pt-5 text-center">
       <div className="mx-auto flex flex-col">
+        <h5 className="mt-2 text-2xl">{toTitleCase(data.current.weather)}</h5>
         <img
           src={data.current.icon}
           alt="An icon representing the current weather at selected location"
@@ -35,7 +36,6 @@ export default function FocusedWeather({ data }) {
             ? `${toTitleCase(data.location.name)}, ${toTitleCase(data.location.state)}`
             : toTitleCase(data.location.name)}
         </h1>
-        <h5 className="mt-2 text-2xl">{toTitleCase(data.current.weather)}</h5>
       </div>
     </div>
   );
