@@ -623,72 +623,56 @@ export default function WeatherApp() {
             </thead>
             <tbody>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Today
-                </td>
+                <td>Monday</td>
                 <td>75&deg;F</td>
                 <td>60&deg;F</td>
                 <td>20%</td>
                 <td>5 mph</td>
               </tr>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Tuesday
-                </td>
+                <td>Tuesday</td>
                 <td>80&deg;F</td>
                 <td>65&deg;F</td>
                 <td>10%</td>
                 <td>10 mph</td>
               </tr>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Wednesday
-                </td>
+                <td>Wednesday</td>
                 <td>85&deg;F</td>
                 <td>70&deg;F</td>
                 <td>5%</td>
                 <td>15 mph</td>
               </tr>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Thursday
-                </td>
+                <td>Thursday</td>
                 <td>80&deg;F</td>
                 <td>65&deg;F</td>
                 <td>10%</td>
                 <td>10 mph</td>
               </tr>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Friday
-                </td>
+                <td>Friday</td>
                 <td>75&deg;F</td>
                 <td>60&deg;F</td>
                 <td>20%</td>
                 <td>5 mph</td>
               </tr>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Saturday
-                </td>
+                <td>Saturday</td>
                 <td>70&deg;F</td>
                 <td>55&deg;F</td>
                 <td>30%</td>
                 <td>0 mph</td>
               </tr>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Sunday
-                </td>
+                <td>Sunday</td>
                 <td>75&deg;F</td>
                 <td>60&deg;F</td>
                 <td>20%</td>
                 <td>5 mph</td>
               </tr>
               <tr>
-                <td className="text-left font-semibold text-stone-200/70">
-                  Monday
-                </td>
+                <td>Monday</td>
                 <td>80&deg;F</td>
                 <td>65&deg;F</td>
                 <td>10%</td>
