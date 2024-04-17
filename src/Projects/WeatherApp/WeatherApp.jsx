@@ -191,10 +191,9 @@ export default function WeatherApp() {
             </button>
           </div>
           <div>
-            <span className="flex text-3xl">
+            <span className="flex text-3xl after:mt-auto after:text-xl after:opacity-60 after:content-['Wednesday']">
               <i className="fa-solid fa-calendar-day my-auto mr-2 text-lg"></i>
-              November 15 2021{" "}
-              <span className="mt-auto flex text-xl opacity-60">Wednesday</span>
+              November 15 2021
             </span>
             <span className="flex text-3xl">
               <i className="fa-solid fa-location-dot my-auto mr-2 text-lg"></i>
@@ -237,7 +236,7 @@ export default function WeatherApp() {
                         color: "rgba(255, 255, 255, 0.60)",
                         callback: function (value, index, values) {
                           // Display only every 10th label
-                          return index % 10 === 0 ? value : "";
+                          return index % 10 === 0 ? value + "m" : "";
                         },
                       },
                     },
@@ -612,6 +611,91 @@ export default function WeatherApp() {
               </div>
             </span>
           </div>
+          <table className="text-center">
+            <thead>
+              <tr>
+                <th></th>
+                <th>High</th>
+                <th>Low</th>
+                <th>Rain</th>
+                <th>Wind</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Today
+                </td>
+                <td>75&deg;F</td>
+                <td>60&deg;F</td>
+                <td>20%</td>
+                <td>5 mph</td>
+              </tr>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Tuesday
+                </td>
+                <td>80&deg;F</td>
+                <td>65&deg;F</td>
+                <td>10%</td>
+                <td>10 mph</td>
+              </tr>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Wednesday
+                </td>
+                <td>85&deg;F</td>
+                <td>70&deg;F</td>
+                <td>5%</td>
+                <td>15 mph</td>
+              </tr>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Thursday
+                </td>
+                <td>80&deg;F</td>
+                <td>65&deg;F</td>
+                <td>10%</td>
+                <td>10 mph</td>
+              </tr>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Friday
+                </td>
+                <td>75&deg;F</td>
+                <td>60&deg;F</td>
+                <td>20%</td>
+                <td>5 mph</td>
+              </tr>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Saturday
+                </td>
+                <td>70&deg;F</td>
+                <td>55&deg;F</td>
+                <td>30%</td>
+                <td>0 mph</td>
+              </tr>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Sunday
+                </td>
+                <td>75&deg;F</td>
+                <td>60&deg;F</td>
+                <td>20%</td>
+                <td>5 mph</td>
+              </tr>
+              <tr>
+                <td className="text-left font-semibold text-stone-200/70">
+                  Monday
+                </td>
+                <td>80&deg;F</td>
+                <td>65&deg;F</td>
+                <td>10%</td>
+                <td>10 mph</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </>
