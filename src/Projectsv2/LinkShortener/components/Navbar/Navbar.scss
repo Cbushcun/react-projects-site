@@ -1,0 +1,11 @@
+// Importing Bootstrap styles
+@import "../../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+h6 {
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+}

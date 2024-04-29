@@ -1,6 +1,6 @@
 import ProjectLanding from "./Pages/ProjectLanding/ProjectLanding"; // project table homepage (https://www.projects.businessbybush.com)
 import LinkShortenerApp from "./Projects/LinkShortener/LinkShortenerApp"; // URL Shortener project
-import WeatherApp from "./Projects/WeatherApp/WeatherApp"; // Weather App project
+import WeatherApp from "./Projectsv2/WeatherApp/WeatherApp"; // Weather App project
 import NotFound from "./Pages/NotFound"; // 404
 
 /* Intro to web develoment project pages */
@@ -11,7 +11,6 @@ import LabIIPII from "./Projects/WebDevProject/pages/LabIIPII";
 import LabIIIPI from "./Projects/WebDevProject/pages/LabIIIPI";
 import LabIIIPII from "./Projects/WebDevProject/pages/LabIIIPII";
 import LabIIIPIII from "./Projects/WebDevProject/pages/LabIIIPIII";
-import PokedexApp from "./Projects/PokedexApp/PokedexApp";
 
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -86,10 +85,8 @@ function App() {
           />
           {/* Link Shortener */}
           <Route path="/link-shortener" element={<LinkShortenerApp />} />
-          {/* Pokedex Routes */}
-          <Route path="/pokemon" element={<PokedexApp />} />
-          {/* Pokemon Routes */}
           {/* WeatherApp routes*/}
+          <Route path="/weather" element={<WeatherApp />} />
           <Route path="/weather" element={<WeatherApp />} />
           {/* Error routing */}
           <Route path="/*" element={<NotFound />} />
